@@ -6,21 +6,24 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 /**
- *
+ * Object will contain information about a valid return value a method has 
+ * and can then later be checked from this class 
  * @author Gustav Wiiala <wiiala.gustav@gmail.com>
  * @param <T>
  */
 public class OperationValidBehavior<T> {  
-    
-    
-    //Allowed returnvalues can be a complex object, a pattern expression, number etc.
+
+    /**Allowed return values can be a complex object, a pattern expression, number etc.*/
     private final Object validValue;
     
-    //Comparision type to use
+    /**Comparision type to use*/
     private final COMPARISION comparator;
     
    
-    public enum COMPARISION {
+    /**
+     * The comparative attributes
+     */
+    public enum COMPARISION{
         /** Equals return value*/
         EQUAL, 
         /** does not return null*/
@@ -43,6 +46,7 @@ public class OperationValidBehavior<T> {
      * Used when return type should be VOID 
      */
     public OperationValidBehavior(){
+ 
         this.validValue = null;
         this.comparator = COMPARISION.VOID;
     }

@@ -22,6 +22,7 @@ public interface InteractionStructure extends Collection<OperationAction> {
      
      /**
      * Executes operation in correct order
+     * @throws MethodBehaviourException
      */
-     public void run();
+     public void run() throws MethodBehaviourException;
 }

@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * This class helps with storing a operation to perform within a class
- * helpful to have if we would like to batch of defined operations in a 
+ * helpful to have if we would like a batch of defined operations in a 
  * structured matter
  * @author Gustav Wiiala
  * @param <T>

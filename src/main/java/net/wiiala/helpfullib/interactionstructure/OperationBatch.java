@@ -32,13 +32,13 @@ public class OperationBatch extends LinkedList<OperationAction> implements Inter
      * Executes operation in correct order
      */
     @Override
-    public void run(){
+    public void run() throws MethodBehaviourException{
         try {  
             for(OperationAction op : this){
                 op.invokeMethod(); 
             }     
         } catch(IllegalAccessException | IllegalArgumentException 
-                | InvocationTargetException | MethodBehaviourException e){
+                | InvocationTargetException e){
                e.printStackTrace();
         }
     }
