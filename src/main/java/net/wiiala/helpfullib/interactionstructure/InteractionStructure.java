@@ -7,7 +7,7 @@ import java.util.Collection;
  * invocation that should follow a certain order. 
  * 
  * Implementing class should store some type of iterable collection using 
- * Iterable as super-type, where we store OperationAction.
+ * Collection as super-type, where we store OperationAction.
  * 
  * @author Gustav Wiiala <wiiala.gustav@gmail.com>
  */

@@ -155,7 +155,7 @@ public class OperationAction <T> {
      * @throws InvocationTargetException
      * @throws NoSuchMethodException
      * @throws InstantiationException 
-     * @throws rulebased.MethodBehaviourException 
+     * @throws MethodBehaviourException 
      */
     public Object invokeMethod(Class<T> classType, 
                                 String methodName,
@@ -181,7 +181,7 @@ public class OperationAction <T> {
      * @throws NoSuchMethodException 
      * @throws java.lang.IllegalAccessException 
      * @throws java.lang.reflect.InvocationTargetException 
-     * @throws rulebased.MethodBehaviourException 
+     * @throws MethodBehaviourException 
      */
     public Object invokeMethod(String methodName,Object... parameters) 
                                                             throws NoSuchMethodException 
@@ -199,7 +199,7 @@ public class OperationAction <T> {
      * @throws IllegalAccessException
      * @throws IllegalArgumentException
      * @throws InvocationTargetException 
-     * @throws rulebased.MethodBehaviourException 
+     * @throws MethodBehaviourException 
      */
     public  Object invokeMethod() throws IllegalAccessException,
                                         IllegalArgumentException,
