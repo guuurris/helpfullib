@@ -7,6 +7,10 @@ package net.wiiala.helpfullib.interactionstructure;
  */
 public class MethodBehaviourException extends Exception {
 
+    /**
+     * Creates an exception with specified information
+     * @param message information message to give
+     */
     public MethodBehaviourException(String message) {
         super("MethodBehaviourException occurred due to: " + message);
     }  
